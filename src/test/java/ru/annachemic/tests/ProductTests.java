@@ -55,4 +55,5 @@ public class ProductTests {
         assertThat(response.body().getTitle(), equalTo(CategoryType.FOOD.getTitle()));
         assertThat(response.body().getId(), equalTo(id));
     }
+
 }
