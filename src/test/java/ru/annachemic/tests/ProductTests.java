@@ -12,9 +12,7 @@ import ru.annachemic.dto.Category;
 import ru.annachemic.service.CategoryService;
 import ru.annachemic.service.ProductService;
 import ru.annachemic.utils.RetrofitUtils;
-
 import java.io.IOException;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
@@ -57,4 +55,5 @@ public class ProductTests {
         assertThat(response.body().getTitle(), equalTo(CategoryType.FOOD.getTitle()));
         assertThat(response.body().getId(), equalTo(id));
     }
+
 }
